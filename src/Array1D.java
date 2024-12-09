@@ -14,6 +14,7 @@ public class Array1D {
         }
         printArray();
         System.out.println(sumArray());
+        System.out.println(aveArray());
     }
 
     public void printArray(){
@@ -31,9 +32,15 @@ public class Array1D {
 
         return sum;
     }
+
     public double aveArray(){
         double average = 0;
+        double sum = 0;
 
+    for(int k = 0; k < numbers.length; k++){
+        sum = sum + numbers[k];
+        average = sum/numbers.length;
+    }
 
         return average;
     }
