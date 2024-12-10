@@ -19,4 +19,12 @@ public class Country {
         System.out.println(gdp);
         System.out.println(name);
     }
+
+    public int getPopulation(){
+        return population;
+    }
+
+    public void setPopulation(int population1){
+        population = population1;
+    }
 }
