@@ -15,6 +15,7 @@ public class Array1DObjects {
         }
         printArray();
         System.out.println(addPops());
+        System.out.println(avePop());
     }
 
     public void printArray(){
@@ -31,5 +32,17 @@ public class Array1DObjects {
         }
 
         return sum;
+    }
+
+    public int avePop(){
+        double average = 0;
+        double sum = 0;
+
+        for(int k = 0; k < countries.length; k++){
+            sum = sum + countries[k].getPopulation();
+            average = sum/countries.length;
+        }
+
+        return (int) average;
     }
 }
