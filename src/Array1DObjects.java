@@ -34,7 +34,7 @@ public class Array1DObjects {
         return sum;
     }
 
-    public int avePop(){
+    public double avePop(){
         double average = 0;
         double sum = 0;
 
@@ -43,6 +43,6 @@ public class Array1DObjects {
             average = sum/countries.length;
         }
 
-        return (int) average;
+        return average;
     }
 }
