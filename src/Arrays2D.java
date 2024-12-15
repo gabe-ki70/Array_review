@@ -13,6 +13,7 @@ public class Arrays2D {
         }
         printArray();
         System.out.println(sum2D());
+        System.out.println(ave2D());
     }
 
     public void printArray() {
@@ -32,5 +33,18 @@ public class Arrays2D {
             }
         }
         return sum;
+    }
+
+    public double ave2D(){
+        double average = 0;
+        double sum = 0;
+
+        for(int r = 0; r < nums.length; r++) {
+            for (int c = 0; c < nums.length; c++) {
+                sum = sum + nums[r][c];
+                average = sum / nums.length;
+            }
+        }
+        return average;
     }
 }
